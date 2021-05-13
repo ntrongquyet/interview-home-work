@@ -1,0 +1,31 @@
+GET http://localhost:3000/posts/
+
+###
+
+PUT  http://localhost:3000/posts/1
+content-type: application/json
+
+{
+    "title": "123456"
+}
+
+###
+DELETE  http://localhost:3000/posts/1
+content-type: application/json
+###
+POST  http://localhost:3000/posts/
+content-type: application/json
+
+{
+    "id": 4,
+    "owner": 3,
+    "title": "Test",
+    "content": "Lorem ipsum dolor sit amet, consect",
+    "created_at": 1576506719083,
+    "tags": [
+      "gov",
+      "legal",
+      "political"
+    ]
+}
+
